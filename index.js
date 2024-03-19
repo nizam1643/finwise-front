@@ -1,6 +1,7 @@
 var path = require('path');
 var express = require('express');
 var expressLayouts = require('./lib/express-layouts');
+var route = require('./routes/route'); // Nizam
 var route_1 = require('./routes/route_1'); // Nizam
 var route_2 = require('./routes/route_2'); // Bongsu
 var route_3 = require('./routes/route_3'); // Danial
@@ -13,6 +14,7 @@ app.set('layout extractScripts', true)
 app.set('layout extractStyles', true)
 
 app.use(expressLayouts);
+app.use('/', route);
 app.use('/route_1', route_1);
 app.use('/route_2', route_2);
 app.use('/route_3', route_3);
