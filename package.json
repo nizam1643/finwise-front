@@ -1,13 +1,13 @@
 {
-  "author": "test",
+  "author": "Byte Troopers (UPSI)",
   "name": "finwise-front",
-  "description": "Layout support for ejs in express.",
+  "description": "Personalized Debt Management System",
   "keywords": [
     "express",
     "layout",
     "ejs"
   ],
-  "version": "2.5.1",
+  "version": "1.0.0",
   "main": "lib/express-layouts.js",
   "dependencies": {},
   "devDependencies": {
