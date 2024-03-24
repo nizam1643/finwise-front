@@ -9,3 +9,6 @@ FinWise is a Personalized Debt Management System designed to empower users in ef
 
 ## Project URL:
 [Project URL:](https://nizam1643.github.io/finwise-front/cash-flow-information/debt-classification.html) https://nizam1643.github.io/finwise-front/cash-flow-information/debt-classification.html
+
+## Video URL:
+[Project URL:](https://youtu.be/ztD8xbBmvr4) https://youtu.be/ztD8xbBmvr4
