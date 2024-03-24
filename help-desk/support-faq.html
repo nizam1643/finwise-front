@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinWise: Personalized Debt Management System</title>
+
+    <!-- Global stylesheets -->
+    <link href="../template/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+    <link href="../template/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="../template/html/css/ltr/all.min.css" id="stylesheet" rel="stylesheet"
+        type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="../template/assets/demo/demo_configurator.js"></script>
+    <script src="../template/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="../template/html/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-dark navbar-expand-lg navbar-static border-bottom border-bottom-white border-opacity-10">
+        <div class="container-fluid">
+            <div class="d-flex d-lg-none me-2">
+                <button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
+
+            <div class="navbar-brand">
+                <a href="" class="d-inline-flex align-items-center">
+                </a>
+            </div>
+
+            <div class="d-lg-none ms-2">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-mobile" aria-expanded="false">
+                    <i class="ph-squares-four"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse order-lg-1 collapse order-2" id="navbar-mobile" style="">
+                <ul class="navbar-nav mt-lg-0 mt-2">
+                </ul>
+            </div>
+
+            <ul class="nav gap-sm-2 order-lg-2 order-1 ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded">
+                        <i class="ph-bell"></i>
+                        <span
+                            class="badge bg-yellow position-absolute translate-middle-top zindex-1 rounded-pill end-0 top-0 me-1 mt-1 text-black">10+</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item-dropdown-lg dropdown">
+                    <a href="#" class="navbar-nav-link align-items-center rounded p-1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="status-indicator-container">
+                            <img src="https://dummyimage.com/300.png/09f/fff" class="w-32px h-32px rounded" alt="">
+                            <span class="status-indicator bg-success"></span>
+                        </div>
+                        <span class="d-none d-lg-inline-block mx-lg-2">Nizamo Din</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- Sidebar header -->
+                <div class="sidebar-section">
+                    <div class="sidebar-section-body d-flex justify-content-center">
+                        <h5 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation</h5>
+
+                        <div>
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-control sidebar-main-resize d-none d-lg-inline-flex border-transparent">
+                                <i class="ph-arrows-left-right"></i>
+                            </button>
+
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-mobile-main-toggle d-lg-none border-transparent">
+                                <i class="ph-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /sidebar header -->
+
+
+                <!-- Main navigation -->
+                <div class="sidebar-section">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header pt-0">
+                            <div class="text-uppercase fs-sm lh-sm sidebar-resize-hide opacity-50">Main</div>
+                            <i class="ph-dots-three sidebar-resize-show"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="ph-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Cash Flow Information</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/debt-classification.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Debt Classification</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/payment-scheduling.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Payment Scheduling</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/financial-statement.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Financial Statement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Consultation Bridge</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../consultation-bridge/online-session.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Online Session</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Education Hub</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-reader.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Reader</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-viewer.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Viewer</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Personalization Configuration</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../personalization/behavioral-personality.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Behavioral Personality</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>ChatBot GenAI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Help Desk</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="./support-faq.html" class="nav-link active">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Support FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact-us.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /layout -->
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light page-header-static shadow">
+                <div class="page-header-content d-lg-flex border-top">
+                    <div class="d-flex">
+                        <div class="breadcrumb py-2">
+                            <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
+                            <a href="#" class="breadcrumb-item">Home</a>
+                            <a href="#" class="breadcrumb-item">Page</a>
+                            <span class="breadcrumb-item active">Current</span>
+                        </div>
+
+                        <a href="#breadcrumb_elements"
+                            class="btn btn-light align-self-center collapsed d-lg-none rounded-pill ms-auto border-transparent p-0"
+                            data-bs-toggle="collapse">
+                            <i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-lg-block ms-lg-auto collapse" id="breadcrumb_elements">
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Inner content -->
+            <div class="content-inner">
+
+                <!-- Content area -->
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        Navigation
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+
+                                    <div class="sidebar-section-body pb-2">
+                                        <a href="#" class="btn btn-teal w-100">Ask question <i
+                                                class="ph-chats ms-2"></i></a>
+                                    </div>
+
+                                    <div class="nav nav-sidebar">
+                                        <li class="nav-item-divider"></li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="ph-chats"></i>
+                                                Ask our community
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="helpdesk-feedback-contactus" class="nav-link">
+                                                <i class="ph-envelope"></i>
+                                                Contact us
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        Frequently Asked Questions
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="fw-semibold mb-3 py-1">Getting started</h5>
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question1">
+                                                    <i class="ph-question me-2"></i>
+                                                    What is debt tracking?
+                                                </button>
+                                            </div>
+
+                                            <div id="question1" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Debt tracking involves monitoring and managing your
+                                                        various debts, such as loans,
+                                                        credit cards, and mortgages, to keep track of balances, interest
+                                                        rates, and payment schedules.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 25, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                320
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                14
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question2">
+                                                    <i class="ph-question me-2"></i>
+                                                    How does your platform help with debt tracking?
+                                                </button>
+                                            </div>
+
+                                            <div id="question2" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Our platform provides tools and features to help
+                                                        users input and organize their debt information,
+                                                        track payment due dates, calculate interest, and visualize their
+                                                        debt payoff progress.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 22, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                278
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                25
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question3">
+                                                    <i class="ph-question me-2"></i>
+                                                    Is my data secure?
+                                                </button>
+                                            </div>
+
+                                            <div id="question3" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Yes, we take the security of your data seriously.
+                                                        Our platform employs robust
+                                                        encryption methods and follows industry-standard security
+                                                        protocols to safeguard your sensitive
+                                                        financial information.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 20, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                438
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                16
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="fw-semibold my-3 py-1">Using the platform</h5>
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question6">
+                                                    <i class="ph-question me-2"></i>
+                                                    Can I track multiple debts simultaneously?
+                                                </button>
+                                            </div>
+
+                                            <div id="question6" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Yes, our platform allows you to track multiple debts
+                                                        simultaneously. You can add, edit,
+                                                        and remove debts as needed to maintain an accurate overview of
+                                                        your financial obligations.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 14, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                832
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                32
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question7">
+                                                    <i class="ph-question me-2"></i>
+                                                    What types of debts can I track?
+                                                </button>
+                                            </div>
+
+                                            <div id="question7" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">You can track various types of debts, including
+                                                        credit card balances, personal loans,
+                                                        student loans, auto loans, mortgages, and any other liabilities
+                                                        you may have.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 13, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                453
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                30
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question8">
+                                                    <i class="ph-question me-2"></i>
+                                                    Do you provide budgeting assistance?
+                                                </button>
+                                            </div>
+
+                                            <div id="question8" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">While our primary focus is on debt tracking, we also
+                                                        offer budgeting tools and resources to help you manage your
+                                                        finances effectively.
+                                                        These tools can assist you in creating and sticking to a budget
+                                                        to achieve your financial goals.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: May 12, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                735
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                21
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="fw-semibold my-3 py-1">Account Management</h5>
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question12">
+                                                    <i class="ph-question me-2"></i>
+                                                    Can I set up reminders for payment due dates?
+                                                </button>
+                                            </div>
+
+                                            <div id="question12" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Yes, you can set up reminders for payment due dates
+                                                        within our platform.
+                                                        You'll receive notifications to ensure you never miss a payment
+                                                        and can stay on top of your financial
+                                                        obligations.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 24, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                735
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                34
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question13">
+                                                    <i class="ph-question me-2"></i>
+                                                    How do I add or remove debts from my account?
+                                                </button>
+                                            </div>
+
+                                            <div id="question13" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Adding or removing debts from your account is
+                                                        simple. You can easily add new debts by entering the necessary
+                                                        information, and similarly, you can remove debts that are no
+                                                        longer applicable or have been paid off.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 23, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                865
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                43
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question14">
+                                                    <i class="ph-question me-2"></i>
+                                                    What happens if I miss a payment?
+                                                </button>
+                                            </div>
+
+                                            <div id="question14" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Missing a payment can have various consequences,
+                                                        including late fees, increased interest rates,
+                                                        and damage to your credit score. We advise our users to
+                                                        prioritize timely payments and offer resources to help you avoid
+                                                        missing deadlines.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 22, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                432
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                38
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="fw-semibold my-3 py-1">Additional Features and Support</h5>
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question17">
+                                                    <i class="ph-question me-2"></i>
+                                                    Do you offer debt consolidation or refinancing services?
+                                                </button>
+                                            </div>
+
+                                            <div id="question17" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">While our platform focuses primarily on debt
+                                                        tracking, we may offer resources and information
+                                                        on debt consolidation or refinancing options to help you manage
+                                                        your debts more effectively.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 20, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                290
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                29
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question18">
+                                                    <i class="ph-question me-2"></i>
+                                                    Are there any fees for using your platform?
+                                                </button>
+                                            </div>
+
+                                            <div id="question18" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">We offer both free and premium tiers of service.
+                                                        While basic features are available at no cost,
+                                                        we may charge fees for access to advanced features or premium
+                                                        services.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 19, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                642
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                39
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button type="button" class="accordion-button collapsed"
+                                                    data-bs-toggle="collapse" data-bs-target="#question19">
+                                                    <i class="ph-question me-2"></i>
+                                                    Is customer support available?
+                                                </button>
+                                            </div>
+
+                                            <div id="question19" class="accordion-collapse collapse">
+                                                <div class="accordion-body">
+                                                    <p class="mb-3">Yes, our customer support team is available to
+                                                        assist you with any questions or issues you may
+                                                        encounter while using our platform. You can reach out to us via
+                                                        email, phone, or through our support portal for prompt
+                                                        assistance.</p>
+
+                                                    <div class="d-sm-flex align-items-sm-center">
+                                                        <span class="text-muted">Latest update: April 18, 2022</span>
+
+                                                        <ul class="list-inline text-nowrap mt-sm-0 mb-0 ms-auto mt-2">
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-primary me-2"><i
+                                                                        class="ph-thumbs-up"></i></a>
+                                                                735
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <a href="#" class="text-muted me-2"><i
+                                                                        class="ph-thumbs-down"></i></a>
+                                                                26
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /content area -->
+
+
+                <!-- Footer -->
+                <div class="navbar navbar-sm navbar-footer border-top">
+                    <div class="container-fluid">
+                        <span>&copy; 2023 <a href="#">FinWise: Personalized Debt Management System </a></span>
+                    </div>
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /inner content -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</body>
+
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>FinWise: Personalized Debt Management System</title>
+
+    <!-- Global stylesheets -->
+    <link href="../template/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css" />
+    <link href="../template/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css" />
+    <link href="../template/html/css/ltr/all.min.css" id="stylesheet" rel="stylesheet"
+        type="text/css" />
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="../template/assets/demo/demo_configurator.js"></script>
+    <script src="../template/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="../template/html/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- /theme JS files -->
+</head>
+
+<body>
+    <!-- Main navbar -->
+    <div class="navbar navbar-dark navbar-expand-lg navbar-static border-bottom border-bottom-white border-opacity-10">
+        <div class="container-fluid">
+            <div class="d-flex d-lg-none me-2">
+                <button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
+
+            <div class="navbar-brand">
+                <a href="" class="d-inline-flex align-items-center"> </a>
+            </div>
+
+            <div class="d-lg-none ms-2">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-mobile" aria-expanded="false">
+                    <i class="ph-squares-four"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse order-lg-1 collapse order-2" id="navbar-mobile" style="">
+                <ul class="navbar-nav mt-lg-0 mt-2"></ul>
+            </div>
+
+            <ul class="nav gap-sm-2 order-lg-2 order-1 ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded">
+                        <i class="ph-bell"></i>
+                        <span
+                            class="badge bg-yellow position-absolute translate-middle-top zindex-1 rounded-pill end-0 top-0 me-1 mt-1 text-black">10+</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item-dropdown-lg dropdown">
+                    <a href="#" class="navbar-nav-link align-items-center rounded p-1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="status-indicator-container">
+                            <img src="https://dummyimage.com/300.png/09f/fff" class="w-32px h-32px rounded" alt="" />
+                            <span class="status-indicator bg-success"></span>
+                        </div>
+                        <span class="d-none d-lg-inline-block mx-lg-2">Nizamo Din</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+    <!-- Page content -->
+    <div class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+                <!-- Sidebar header -->
+                <div class="sidebar-section">
+                    <div class="sidebar-section-body d-flex justify-content-center">
+                        <h5 class="sidebar-resize-hide flex-grow-1 my-auto">
+                            Navigation
+                        </h5>
+
+                        <div>
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-control sidebar-main-resize d-none d-lg-inline-flex border-transparent">
+                                <i class="ph-arrows-left-right"></i>
+                            </button>
+
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-mobile-main-toggle d-lg-none border-transparent">
+                                <i class="ph-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /sidebar header -->
+
+                <!-- Main navigation -->
+                <div class="sidebar-section">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                        <!-- Main -->
+                        <li class="nav-item-header pt-0">
+                            <div class="text-uppercase fs-sm lh-sm sidebar-resize-hide opacity-50">
+                                Main
+                            </div>
+                            <i class="ph-dots-three sidebar-resize-show"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="ph-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Cash Flow Information</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="./debt-classification.html"
+                                        class="nav-link active">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Debt Classification</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./payment-scheduling.html"
+                                        class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Payment Scheduling</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./financial-statement.html"
+                                        class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Financial Statement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Consultation Bridge</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../consultation-bridge/online-session.html"
+                                        class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Online Session</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Education Hub</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-reader.html" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Reader</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-viewer.html" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Viewer</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Personalization Configuration</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../personalization/behavioral-personality.html"
+                                        class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Behavioral Personality</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>ChatBot GenAI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Help Desk</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../help-desk/support-faq.html" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Support FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../help-desk/contact-us.html" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /layout -->
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+            </div>
+            <!-- /sidebar content -->
+        </div>
+        <!-- /main sidebar -->
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Page header -->
+            <div class="page-header page-header-light page-header-static shadow">
+                <div class="page-header-content d-lg-flex border-top">
+                    <div class="d-flex">
+                        <div class="breadcrumb py-2">
+                            <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
+                            <a href="#" class="breadcrumb-item">Home</a>
+                            <a href="#" class="breadcrumb-item">Page</a>
+                            <span class="breadcrumb-item active">Current</span>
+                        </div>
+
+                        <a href="#breadcrumb_elements"
+                            class="btn btn-light align-self-center collapsed d-lg-none rounded-pill ms-auto border-transparent p-0"
+                            data-bs-toggle="collapse">
+                            <i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-lg-block ms-lg-auto collapse" id="breadcrumb_elements"></div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+            <!-- Inner content -->
+            <div class="content-inner">
+                <!-- Content area -->
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        Debt Classification
+                                    </h5>
+                                </div>
+
+                                <div class="card-body">
+                                    <canvas id="debtChart" width="400" height="400"></canvas>
+                                    <script>
+                                        // Data representing the distribution of debt types
+                                        var debtData = {
+                                            labels: [
+                                                "Lifestyle",
+                                                "Education",
+                                                "Healthcare",
+                                                "Housing",
+                                                "Transportation",
+                                            ], // Debt examples
+                                            datasets: [
+                                                {
+                                                    label: "Government",
+                                                    backgroundColor:
+                                                        "#FF6384",
+                                                    data: [
+                                                        10, 15, 20, 15, 10,
+                                                    ], // Sample data (you can replace it with actual data)
+                                                },
+                                                {
+                                                    label: "Private",
+                                                    backgroundColor:
+                                                        "#36A2EB",
+                                                    data: [
+                                                        15, 20, 25, 20, 15,
+                                                    ], // Sample data (you can replace it with actual data)
+                                                },
+                                                {
+                                                    label: "Online Platform",
+                                                    backgroundColor:
+                                                        "#FFCE56",
+                                                    data: [
+                                                        5, 10, 15, 10, 5,
+                                                    ], // Sample data (you can replace it with actual data)
+                                                },
+                                            ],
+                                        };
+
+                                        // Configuration for the stacked bar chart
+                                        var debtOptions = {
+                                            responsive: true,
+                                            scales: {
+                                                xAxes: [
+                                                    {
+                                                        stacked: true,
+                                                    },
+                                                ],
+                                                yAxes: [
+                                                    {
+                                                        stacked: true,
+                                                    },
+                                                ],
+                                            },
+                                        };
+
+                                        // Get the canvas element
+                                        var ctx = document
+                                            .getElementById("debtChart")
+                                            .getContext("2d");
+
+                                        // Create the stacked bar chart
+                                        var myBarChart = new Chart(ctx, {
+                                            type: "bar",
+                                            data: debtData,
+                                            options: debtOptions,
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Debt Summary</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Debt Type</th>
+                                                    <th>Duration</th>
+                                                    <th>
+                                                        Principal & Interest
+                                                    </th>
+                                                    <th>Interest (%)</th>
+                                                    <th>Monthly Payment</th>
+                                                    <th>Summary</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Lifestyle</td>
+                                                    <td>
+                                                        01/01/2022 -
+                                                        01/01/2023
+                                                    </td>
+                                                    <td>RM 10k + RM 8k</td>
+                                                    <td>5%</td>
+                                                    <td>RM 500</td>
+                                                    <td>-20%</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i
+                                                                class="ph-eye"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Education</td>
+                                                    <td>
+                                                        05/01/2022 -
+                                                        05/01/2023
+                                                    </td>
+                                                    <td>RM 20k + RM 15k</td>
+                                                    <td>3.5%</td>
+                                                    <td>RM 800</td>
+                                                    <td>-25%</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i
+                                                                class="ph-eye"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Healthcare</td>
+                                                    <td>
+                                                        03/01/2022 -
+                                                        03/01/2023
+                                                    </td>
+                                                    <td>RM 15k + RM 12k</td>
+                                                    <td>4%</td>
+                                                    <td>RM 600</td>
+                                                    <td>-20%</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i
+                                                                class="ph-eye"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Housing</td>
+                                                    <td>
+                                                        02/01/2022 -
+                                                        02/01/2023
+                                                    </td>
+                                                    <td>
+                                                        RM 200k + RM 180k
+                                                    </td>
+                                                    <td>4.5%</td>
+                                                    <td>RM 1200</td>
+                                                    <td>-10%</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i
+                                                                class="ph-eye"></i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Transportation</td>
+                                                    <td>
+                                                        04/01/2022 -
+                                                        04/01/2023
+                                                    </td>
+                                                    <td>RM 12k + RM 10k</td>
+                                                    <td>3.2%</td>
+                                                    <td>RM 400</td>
+                                                    <td>-16.67%</td>
+                                                    <td>
+                                                        <a href="#" class="btn btn-primary btn-sm"><i
+                                                                class="ph-eye"></i></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        Personalization Summary
+                                    </h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h2>Lifestyle Debt</h2>
+                                            <p>
+                                                <strong>Duration:</strong>
+                                                January 1, 2022 - January 1,
+                                                2023
+                                            </p>
+                                            <p>
+                                                <strong>Principal &
+                                                    Interest:</strong>
+                                                RM 10,000 + RM 8,000
+                                            </p>
+                                            <p>
+                                                <strong>Interest Rate:</strong>
+                                                5%
+                                            </p>
+                                            <p>
+                                                <strong>Monthly
+                                                    Payment:</strong>
+                                                RM 500
+                                            </p>
+                                            <p>
+                                                <strong>Summary:</strong>
+                                                There has been a reduction
+                                                of 20% in the monthly
+                                                payment, indicating
+                                                potential renegotiation of
+                                                terms.
+                                            </p>
+                                            <hr />
+                                        </div>
+                                        <div class="col-12">
+                                            <h2>Education Debt</h2>
+                                            <p>
+                                                <strong>Duration:</strong>
+                                                May 1, 2022 - May 1, 2023
+                                            </p>
+                                            <p>
+                                                <strong>Principal &
+                                                    Interest:</strong>
+                                                RM 20,000 + RM 15,000
+                                            </p>
+                                            <p>
+                                                <strong>Interest Rate:</strong>
+                                                3.5%
+                                            </p>
+                                            <p>
+                                                <strong>Monthly
+                                                    Payment:</strong>
+                                                RM 800
+                                            </p>
+                                            <p>
+                                                <strong>Summary:</strong> A
+                                                substantial reduction of 25%
+                                                in the monthly payment
+                                                suggests significant
+                                                adjustments.
+                                            </p>
+                                            <hr />
+                                        </div>
+                                        <div class="col-12">
+                                            <h2>Healthcare Debt</h2>
+                                            <p>
+                                                <strong>Duration:</strong>
+                                                March 1, 2022 - March 1,
+                                                2023
+                                            </p>
+                                            <p>
+                                                <strong>Principal &
+                                                    Interest:</strong>
+                                                RM 15,000 + RM 12,000
+                                            </p>
+                                            <p>
+                                                <strong>Interest Rate:</strong>
+                                                4%
+                                            </p>
+                                            <p>
+                                                <strong>Monthly
+                                                    Payment:</strong>
+                                                RM 600
+                                            </p>
+                                            <p>
+                                                <strong>Summary:</strong>
+                                                Efforts to alleviate
+                                                financial strain are evident
+                                                with a reduction of 20% in
+                                                the monthly payment.
+                                            </p>
+                                            <hr />
+                                        </div>
+                                        <div class="col-12">
+                                            <h2>Housing Debt</h2>
+                                            <p>
+                                                <strong>Duration:</strong>
+                                                February 1, 2022 - February
+                                                1, 2023
+                                            </p>
+                                            <p>
+                                                <strong>Principal &
+                                                    Interest:</strong>
+                                                RM 200,000 + RM 180,000
+                                            </p>
+                                            <p>
+                                                <strong>Interest Rate:</strong>
+                                                4.5%
+                                            </p>
+                                            <p>
+                                                <strong>Monthly
+                                                    Payment:</strong>
+                                                RM 1200
+                                            </p>
+                                            <p>
+                                                <strong>Summary:</strong>
+                                                Despite the higher monthly
+                                                payment, there has been a
+                                                notable reduction of 10%.
+                                            </p>
+                                            <hr />
+                                        </div>
+                                        <div class="col-12">
+                                            <h2>Transportation Debt</h2>
+                                            <p>
+                                                <strong>Duration:</strong>
+                                                April 1, 2022 - April 1,
+                                                2023
+                                            </p>
+                                            <p>
+                                                <strong>Principal &
+                                                    Interest:</strong>
+                                                RM 12,000 + RM 10,000
+                                            </p>
+                                            <p>
+                                                <strong>Interest Rate:</strong>
+                                                3.2%
+                                            </p>
+                                            <p>
+                                                <strong>Monthly
+                                                    Payment:</strong>
+                                                RM 400
+                                            </p>
+                                            <p>
+                                                <strong>Summary:</strong>
+                                                Proactive measures have been
+                                                taken with an approximate
+                                                reduction of 16.67% in the
+                                                monthly payment.
+                                            </p>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /content area -->
+
+                <!-- Footer -->
+                <div class="navbar navbar-sm navbar-footer border-top">
+                    <div class="container-fluid">
+                        <span>&copy; 2023
+                            <a href="#">FinWise: Personalized Debt Management
+                                System
+                            </a></span>
+                    </div>
+                </div>
+                <!-- /footer -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+</body>
+
+</html>

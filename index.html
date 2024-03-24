@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect Page</title>
+<script>
+    // Redirect function
+    function redirectTo(url) {
+        // Redirecting to the specified URL
+        window.location.href = url;
+    }
+
+    // Call the redirect function after a certain delay (in milliseconds)
+    setTimeout(function() {
+        redirectTo("./cash-flow-information/debt-classification.html"); // Replace "./" with the desired URL
+    }, 0); // 3000 milliseconds = 3 seconds
+</script>
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <p>This page will redirect you to another website shortly.</p>
+    <p>If you're not redirected automatically, <a href="./cash-flow-information/debt-classification.html">click here</a>.</p>
+</body>
+</html>

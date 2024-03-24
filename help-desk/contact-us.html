@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FinWise: Personalized Debt Management System</title>
+
+    <!-- Global stylesheets -->
+    <link href="../template/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+    <link href="../template/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="../template/html/css/ltr/all.min.css" id="stylesheet" rel="stylesheet"
+        type="text/css">
+    <!-- /global stylesheets -->
+
+    <!-- Core JS files -->
+    <script src="../template/assets/demo/demo_configurator.js"></script>
+    <script src="../template/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="../template/html/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- /theme JS files -->
+
+</head>
+
+<body>
+
+    <!-- Main navbar -->
+    <div class="navbar navbar-dark navbar-expand-lg navbar-static border-bottom border-bottom-white border-opacity-10">
+        <div class="container-fluid">
+            <div class="d-flex d-lg-none me-2">
+                <button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
+
+            <div class="navbar-brand">
+                <a href="" class="d-inline-flex align-items-center">
+                </a>
+            </div>
+
+            <div class="d-lg-none ms-2">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-mobile" aria-expanded="false">
+                    <i class="ph-squares-four"></i>
+                </button>
+            </div>
+
+            <div class="navbar-collapse order-lg-1 collapse order-2" id="navbar-mobile" style="">
+                <ul class="navbar-nav mt-lg-0 mt-2">
+                </ul>
+            </div>
+
+            <ul class="nav gap-sm-2 order-lg-2 order-1 ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded">
+                        <i class="ph-bell"></i>
+                        <span
+                            class="badge bg-yellow position-absolute translate-middle-top zindex-1 rounded-pill end-0 top-0 me-1 mt-1 text-black">10+</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-item-dropdown-lg dropdown">
+                    <a href="#" class="navbar-nav-link align-items-center rounded p-1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <div class="status-indicator-container">
+                            <img src="https://dummyimage.com/300.png/09f/fff" class="w-32px h-32px rounded" alt="">
+                            <span class="status-indicator bg-success"></span>
+                        </div>
+                        <span class="d-none d-lg-inline-block mx-lg-2">Nizamo Din</span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a href="#" class="dropdown-item">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /main navbar -->
+
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+
+                <!-- Sidebar header -->
+                <div class="sidebar-section">
+                    <div class="sidebar-section-body d-flex justify-content-center">
+                        <h5 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation</h5>
+
+                        <div>
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-control sidebar-main-resize d-none d-lg-inline-flex border-transparent">
+                                <i class="ph-arrows-left-right"></i>
+                            </button>
+
+                            <button type="button"
+                                class="btn btn-flat-white btn-icon btn-sm rounded-pill sidebar-mobile-main-toggle d-lg-none border-transparent">
+                                <i class="ph-x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /sidebar header -->
+
+
+                <!-- Main navigation -->
+                <div class="sidebar-section">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <!-- Main -->
+                        <li class="nav-item-header pt-0">
+                            <div class="text-uppercase fs-sm lh-sm sidebar-resize-hide opacity-50">Main</div>
+                            <i class="ph-dots-three sidebar-resize-show"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <i class="ph-house"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Cash Flow Information</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/debt-classification.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Debt Classification</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/payment-scheduling.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Payment Scheduling</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../cash-flow-information/financial-statement.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Financial Statement</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Consultation Bridge</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../consultation-bridge/online-session.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Online Session</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Education Hub</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-reader.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Reader</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../education-hub/content-viewer.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Content Viewer</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Personalization Configuration</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="../personalization/behavioral-personality.html"
+                                        class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Behavioral Personality</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>ChatBot GenAI</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+                            <a href="#" class="nav-link">
+                                <i class="tree-structure"></i>
+                                <span>Help Desk</span>
+                            </a>
+
+                            <ul class="nav-group-sub show collapse">
+                                <li class="nav-item">
+                                    <a href="./support-faq.html" class="nav-link ">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Support FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./contact-us.html" class="nav-link active">
+                                        <i class="ph-arrow-elbow-down-right"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /layout -->
+
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+
+            </div>
+            <!-- /sidebar content -->
+
+        </div>
+        <!-- /main sidebar -->
+
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Page header -->
+            <div class="page-header page-header-light page-header-static shadow">
+                <div class="page-header-content d-lg-flex border-top">
+                    <div class="d-flex">
+                        <div class="breadcrumb py-2">
+                            <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
+                            <a href="#" class="breadcrumb-item">Home</a>
+                            <a href="#" class="breadcrumb-item">Page</a>
+                            <span class="breadcrumb-item active">Current</span>
+                        </div>
+
+                        <a href="#breadcrumb_elements"
+                            class="btn btn-light align-self-center collapsed d-lg-none rounded-pill ms-auto border-transparent p-0"
+                            data-bs-toggle="collapse">
+                            <i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-lg-block ms-lg-auto collapse" id="breadcrumb_elements">
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+
+
+            <!-- Inner content -->
+            <div class="content-inner">
+
+                <!-- Content area -->
+                <div class="content">
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-center">
+                                    <h5 class="mb-0">Contact us</h5>
+                                </div>
+
+                                <div class="show collapse">
+                                    <div class="card-body">
+                                        <form action="#">
+                                            <div class="row mb-3">
+                                                <label class="col-lg-3 col-form-label">Name</label>
+                                                <div class="col-lg-9">
+                                                    <input type="text" class="form-control" placeholder="Text input">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-lg-3 col-form-label">Email</label>
+                                                <div class="col-lg-9">
+                                                    <input type="text" class="form-control" placeholder="Text input">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label class="col-lg-3 col-form-label">Message</label>
+                                                <div class="col-lg-9">
+                                                    <textarea rows="5" cols="5" class="form-control"
+                                                        placeholder="Default textarea"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-end">
+                                                <button type="submit" class="btn btn-primary">Submit form <i
+                                                        class="ph-paper-plane-tilt ms-2"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /content area -->
+
+
+                <!-- Footer -->
+                <div class="navbar navbar-sm navbar-footer border-top">
+                    <div class="container-fluid">
+                        <span>&copy; 2023 <a href="#">FinWise: Personalized Debt Management System </a></span>
+                    </div>
+                </div>
+                <!-- /footer -->
+
+            </div>
+            <!-- /inner content -->
+
+        </div>
+        <!-- /main content -->
+
+    </div>
+    <!-- /page content -->
+
+</body>
+
+</html>
